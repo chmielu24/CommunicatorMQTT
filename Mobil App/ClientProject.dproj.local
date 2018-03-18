@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2018.03.18 20:35:05.477,=D:\PROGRAMOWANIE\delphi\Unit1.pas</Transaction>
+    <Transaction>2018.03.18 20:35:41.577,D:\PROGRAMOWANIE\Delphi\CommunicatorMQTT\Mobil App\Client.fmx=D:\PROGRAMOWANIE\delphi\Unit1.fmx</Transaction>
+    <Transaction>2018.03.18 20:35:41.577,D:\PROGRAMOWANIE\Delphi\CommunicatorMQTT\Mobil App\Client.pas=D:\PROGRAMOWANIE\delphi\Unit1.pas</Transaction>
+    <Transaction>2018.03.18 20:35:51.047,D:\PROGRAMOWANIE\Delphi\CommunicatorMQTT\Mobil App\ClientProject.dproj=D:\PROGRAMOWANIE\delphi\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
