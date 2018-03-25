@@ -5,9 +5,14 @@
     <Transaction>1899.12.30 00:00:00.000.425,=D:\PROGRAMOWANIE\delphi\Unit1.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.489,D:\PROGRAMOWANIE\Delphi\CommunicatorMQTT\Desktop App\DesktopApp.fmx=D:\PROGRAMOWANIE\delphi\Unit1.fmx</Transaction>
     <Transaction>1899.12.30 00:00:00.000.072,=D:\PROGRAMOWANIE\delphi\Project1PCH1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.489,D:\PROGRAMOWANIE\Delphi\CommunicatorMQTT\Desktop App\DesktopApp.h=D:\PROGRAMOWANIE\delphi\Unit1.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.489,D:\PROGRAMOWANIE\Delphi\CommunicatorMQTT\Desktop App\DesktopApp.cpp=D:\PROGRAMOWANIE\delphi\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.489,D:\PROGRAMOWANIE\Delphi\CommunicatorMQTT\Desktop App\DesktopApp.h=D:\PROGRAMOWANIE\delphi\Unit1.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.171,D:\PROGRAMOWANIE\Delphi\CommunicatorMQTT\Desktop App\Project.cbproj=D:\PROGRAMOWANIE\delphi\Project1.cbproj</Transaction>
     <Transaction>2018.03.25 14:44:16.018,=C:\Users\Magda\Documents\GitHub\CommunicatorMQTT\Desktop App\File1.cpp</Transaction>
+    <Transaction>2018.03.25 15:20:53.423,=C:\Users\Magda\Documents\GitHub\CommunicatorMQTT\Desktop App\File1.c</Transaction>
+    <Transaction>2018.03.25 15:22:03.189,=C:\Users\Magda\Documents\GitHub\CommunicatorMQTT\Desktop App\File1.cpp</Transaction>
+    <Transaction>2018.03.25 15:22:18.607,C:\Users\Magda\Documents\GitHub\CommunicatorMQTT\Desktop App\WindowManager.cpp=C:\Users\Magda\Documents\GitHub\CommunicatorMQTT\Desktop App\File1.cpp</Transaction>
+    <Transaction>2018.03.25 15:29:19.180,=C:\Users\Magda\Documents\GitHub\CommunicatorMQTT\Desktop App\File1.h</Transaction>
+    <Transaction>2018.03.25 15:29:33.004,C:\Users\Magda\Documents\GitHub\CommunicatorMQTT\Desktop App\WidownManager.h=C:\Users\Magda\Documents\GitHub\CommunicatorMQTT\Desktop App\File1.h</Transaction>
   </Transactions>
 </BorlandProject>

@@ -170,6 +170,12 @@
         <CppCompile Include="Project.cpp">
             <BuildOrder>0</BuildOrder>
         </CppCompile>
+        <None Include="WidownManager.h">
+            <BuildOrder>4</BuildOrder>
+        </None>
+        <CppCompile Include="WindowManager.cpp">
+            <BuildOrder>3</BuildOrder>
+        </CppCompile>
         <FormResources Include="DesktopApp.fmx"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
