@@ -4,6 +4,7 @@
 #pragma hdrstop
 
 #include "DesktopApp.h"
+#include "Code/Utilities.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.fmx"
@@ -19,7 +20,7 @@ void __fastcall TWindow_Login::buttonLoginClick(TObject *Sender)
 {
 	if(editLogin->Text.IsEmpty() || editPassword->Text.IsEmpty())                   ///chceck if login or password are not empty
 	{
-        ShowMessage("Uzupelnij dane");
+		ShowMessage("Uzupelnij dane");
 	}
 	else                                                                            ///
 	{
