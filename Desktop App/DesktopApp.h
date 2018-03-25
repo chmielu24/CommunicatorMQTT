@@ -6,15 +6,27 @@
 #include <System.Classes.hpp>
 #include <FMX.Controls.hpp>
 #include <FMX.Forms.hpp>
+#include <FMX.Controls.Presentation.hpp>
+#include <FMX.Edit.hpp>
+#include <FMX.StdCtrls.hpp>
+#include <FMX.Types.hpp>
 //---------------------------------------------------------------------------
-class TForm1 : public TForm
+class TWindow_Login : public TForm
 {
 __published:	// IDE-managed Components
+	TButton *buttonLogin;
+	TButton *buttonCancel;
+	TLabel *labelLogin;
+	TLabel *labelPassword;
+	TEdit *editLogin;
+	TEdit *editPassword;
+	void __fastcall buttonCancelClick(TObject *Sender);
+	void __fastcall buttonLoginClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
-	__fastcall TForm1(TComponent* Owner);
+	__fastcall TWindow_Login(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TForm1 *Form1;
+extern PACKAGE TWindow_Login *Window_Login;
 //---------------------------------------------------------------------------
 #endif

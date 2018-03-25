@@ -1,11 +1,56 @@
-object Form1: TForm1
+object Window_Login: TWindow_Login
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'Logowanie'
   ClientHeight = 480
   ClientWidth = 640
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
+  object buttonLogin: TButton
+    Position.X = 296.000000000000000000
+    Position.Y = 264.000000000000000000
+    TabOrder = 0
+    Text = 'Zaloguj'
+    OnClick = buttonLoginClick
+  end
+  object buttonCancel: TButton
+    Position.X = 184.000000000000000000
+    Position.Y = 264.000000000000000000
+    TabOrder = 1
+    Text = 'Anuluj'
+    OnClick = buttonCancelClick
+  end
+  object labelLogin: TLabel
+    Position.X = 184.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Login'
+    TabOrder = 2
+  end
+  object labelPassword: TLabel
+    Position.X = 184.000000000000000000
+    Position.Y = 224.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Haslo'
+    TabOrder = 3
+  end
+  object editLogin: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 296.000000000000000000
+    Position.Y = 192.000000000000000000
+  end
+  object editPassword: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Password = True
+    Position.X = 296.000000000000000000
+    Position.Y = 224.000000000000000000
+  end
 end

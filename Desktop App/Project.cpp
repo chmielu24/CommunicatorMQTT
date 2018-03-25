@@ -7,14 +7,14 @@
 #pragma hdrstop
 #include <System.StartUpCopy.hpp>
 //---------------------------------------------------------------------------
-USEFORM("DesktopApp.cpp", Form1);
+USEFORM("DesktopApp.cpp", Window_Login);
 //---------------------------------------------------------------------------
 extern "C" int FMXmain()
 {
 	try
 	{
 		Application->Initialize();
-		Application->CreateForm(__classid(TForm1), &Form1);
+		Application->CreateForm(__classid(TWindow_Login), &Window_Login);
 		Application->Run();
 	}
 	catch (Exception &exception)

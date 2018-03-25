@@ -7,10 +7,35 @@
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.fmx"
-TForm1 *Form1;
+TWindow_Login *Window_Login;
 //---------------------------------------------------------------------------
-__fastcall TForm1::TForm1(TComponent* Owner)
+__fastcall TWindow_Login::TWindow_Login(TComponent* Owner)
 	: TForm(Owner)
 {
 }
 //---------------------------------------------------------------------------
+
+void __fastcall TWindow_Login::buttonLoginClick(TObject *Sender)
+{
+	if(editLogin->Text.IsEmpty() || editPassword->Text.IsEmpty())                   ///chceck if login or password are not empty
+	{
+        ShowMessage("Uzupe³nij dane");
+	}
+	else                                                                            ///
+	{
+		///sprawdzenie poprawnosci danych z baz¹
+        ShowMessage("Sprawdzanie poprawnosci danych");
+
+    }
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TWindow_Login::buttonCancelClick(TObject *Sender)                   ///Close the main window
+{
+	Window_Login->Close();
+}
+//---------------------------------------------------------------------------
+
+
+
+

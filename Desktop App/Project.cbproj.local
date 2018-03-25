@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2018.03.25 12:36:05.425,=D:\PROGRAMOWANIE\delphi\Unit1.cpp</Transaction>
-    <Transaction>2018.03.25 12:36:06.072,=D:\PROGRAMOWANIE\delphi\Project1PCH1.h</Transaction>
-    <Transaction>2018.03.25 12:36:26.489,D:\PROGRAMOWANIE\Delphi\CommunicatorMQTT\Desktop App\DesktopApp.cpp=D:\PROGRAMOWANIE\delphi\Unit1.cpp</Transaction>
-    <Transaction>2018.03.25 12:36:26.489,D:\PROGRAMOWANIE\Delphi\CommunicatorMQTT\Desktop App\DesktopApp.h=D:\PROGRAMOWANIE\delphi\Unit1.h</Transaction>
-    <Transaction>2018.03.25 12:36:26.489,D:\PROGRAMOWANIE\Delphi\CommunicatorMQTT\Desktop App\DesktopApp.fmx=D:\PROGRAMOWANIE\delphi\Unit1.fmx</Transaction>
-    <Transaction>2018.03.25 12:36:36.627,D:\PROGRAMOWANIE\Delphi\CommunicatorMQTT\Desktop App\DesktopProject.h=D:\PROGRAMOWANIE\delphi\Project1PCH1.h</Transaction>
-    <Transaction>2018.03.25 12:36:43.171,D:\PROGRAMOWANIE\Delphi\CommunicatorMQTT\Desktop App\Project.cbproj=D:\PROGRAMOWANIE\delphi\Project1.cbproj</Transaction>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.627,D:\PROGRAMOWANIE\Delphi\CommunicatorMQTT\Desktop App\DesktopProject.h=D:\PROGRAMOWANIE\delphi\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.425,=D:\PROGRAMOWANIE\delphi\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.489,D:\PROGRAMOWANIE\Delphi\CommunicatorMQTT\Desktop App\DesktopApp.fmx=D:\PROGRAMOWANIE\delphi\Unit1.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.072,=D:\PROGRAMOWANIE\delphi\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.489,D:\PROGRAMOWANIE\Delphi\CommunicatorMQTT\Desktop App\DesktopApp.h=D:\PROGRAMOWANIE\delphi\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.489,D:\PROGRAMOWANIE\Delphi\CommunicatorMQTT\Desktop App\DesktopApp.cpp=D:\PROGRAMOWANIE\delphi\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.171,D:\PROGRAMOWANIE\Delphi\CommunicatorMQTT\Desktop App\Project.cbproj=D:\PROGRAMOWANIE\delphi\Project1.cbproj</Transaction>
+    <Transaction>2018.03.25 14:44:16.018,=C:\Users\Magda\Documents\GitHub\CommunicatorMQTT\Desktop App\File1.cpp</Transaction>
   </Transactions>
 </BorlandProject>
