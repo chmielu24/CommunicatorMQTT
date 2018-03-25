@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<BorlandProject>
-	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.183,D:\PROGRAMOWANIE\delphi\Unit1.pas=D:\PROGRAMOWANIE\Delphi\CommunicatorMQTT\Desktop App\Manager.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.183,D:\PROGRAMOWANIE\delphi\Unit1.fmx=D:\PROGRAMOWANIE\Delphi\CommunicatorMQTT\Desktop App\Manager.fmx</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.592,D:\PROGRAMOWANIE\delphi\Project1.dproj=D:\PROGRAMOWANIE\Delphi\CommunicatorMQTT\Desktop App\ManagerProject.dproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.219,=D:\PROGRAMOWANIE\delphi\Unit1.pas</Transaction>
-  </Transactions>
-</BorlandProject>
