@@ -20,8 +20,7 @@ void __fastcall TWindow_Login::buttonLoginClick(TObject *Sender)
 {
 	if(editLogin->Text.IsEmpty() || editPassword->Text.IsEmpty())                   ///chceck if login or password are not empty
 	{
-
-        ShowMessage("Uzupelnij dane");
+		ShowMessage("Uzupelnij dane");
 	}
 	else                                                                            ///
 	{
