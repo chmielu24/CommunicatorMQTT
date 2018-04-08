@@ -3,7 +3,7 @@
         <ProjectGuid>{1B2DEE6D-4FBF-4EFA-BD2E-07FF6F02EE37}</ProjectGuid>
         <ProjectVersion>18.3</ProjectVersion>
         <FrameworkType>VCL</FrameworkType>
-        <MainSource>ProjectDesktopApp.cpp</MainSource>
+        <MainSource>DesktopServiceProject.cpp</MainSource>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
@@ -68,7 +68,7 @@
         <AllPackageLibs>vcl.lib;rtl.lib</AllPackageLibs>
         <IncludePath>CommunicatorMQTT\Desktop Service\;$(IncludePath)</IncludePath>
         <ILINK_LibraryPath>CommunicatorMQTT\Desktop Service\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
-        <SanitizedProjectName>ProjectDesktopApp</SanitizedProjectName>
+        <SanitizedProjectName>DesktopServiceProject</SanitizedProjectName>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Android)'!=''">
         <PackageImports>bindcomp;bindcompdbx;bindcompfmx;bindengine;CustomIPTransport;dbexpress;dbrtl;dbxcds;DbxClientDriver;DbxCommonDriver;DBXInterBaseDriver;DBXSqliteDriver;dsnap;dsnapxml;fmx;fmxFireDAC;FMXTee;FmxTeeUI;IndyCore;IndyIPClient;IndyIPCommon;IndyIPServer;IndyProtocols;IndySystem;rtl;tethering;xmlrtl;$(PackageImports)</PackageImports>
@@ -129,11 +129,11 @@
             <BuildOrder>2</BuildOrder>
             <PCH>true</PCH>
         </PCHCompile>
-        <CppCompile Include="ProjectDesktopApp.cpp">
+        <CppCompile Include="DesktopServiceProject.cpp">
             <BuildOrder>0</BuildOrder>
         </CppCompile>
-        <ResFiles Include="ProjectDesktopApp.res">
-            <ModuleName>ProjectDesktopApp.res</ModuleName>
+        <ResFiles Include="DesktopServiceProject.res">
+            <ModuleName>DesktopServiceProject.res</ModuleName>
             <BuildOrder>1</BuildOrder>
         </ResFiles>
         <CppCompile Include="Unit1.cpp">
@@ -168,7 +168,7 @@
                     <ProjectProperties Name="IndexFiles">False</ProjectProperties>
                 </ProjectProperties>
                 <Source>
-                    <Source Name="MainSource">ProjectDesktopApp.cpp</Source>
+                    <Source Name="MainSource">DesktopServiceProject.cpp</Source>
                 </Source>
             </CPlusPlusBuilder.Personality>
             <Deployment Version="3">
@@ -222,20 +222,14 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName=".\Win32\Debug\ProjectDesktopApp.exe" Configuration="Debug" Class="ProjectOutput">
-                    <Platform Name="Win32">
-                        <RemoteName>ProjectDesktopApp.exe</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
                     <Platform Name="OSX32">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="ProjectDesktopApp.res" Configuration="Debug" Class="ProjectFile">
+                <DeployFile LocalName=".\Win32\Debug\DesktopServiceProject.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
-                        <RemoteDir>.\</RemoteDir>
+                        <RemoteName>DesktopServiceProject.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -249,14 +243,20 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName=".\Win32\Debug\ProjectDesktopApp.tds" Configuration="Debug" Class="DebugSymbols">
+                <DeployFile LocalName="DesktopServiceProject.res" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Win32">
-                        <RemoteName>ProjectDesktopApp.tds</RemoteName>
+                        <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
                 <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin64\cc64250.dll" Class="DependencyModule">
                     <Platform Name="Win64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName=".\Win32\Debug\DesktopServiceProject.tds" Configuration="Debug" Class="DebugSymbols">
+                    <Platform Name="Win32">
+                        <RemoteName>DesktopServiceProject.tds</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
