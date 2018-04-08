@@ -85,8 +85,8 @@
         <AllPackageLibs>rtl.lib;fmx.lib</AllPackageLibs>
         <_TCHARMapping>wchar_t</_TCHARMapping>
         <Multithreaded>true</Multithreaded>
-        <IncludePath>Code\;CommunicatorMQTT\Desktop App\;$(IncludePath)</IncludePath>
-        <ILINK_LibraryPath>Code\;CommunicatorMQTT\Desktop App\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+        <IncludePath>Windows\;Code\;CommunicatorMQTT\Desktop App\;$(IncludePath)</IncludePath>
+        <ILINK_LibraryPath>Windows\;Code\;CommunicatorMQTT\Desktop App\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
         <SanitizedProjectName>Project</SanitizedProjectName>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
@@ -157,11 +157,9 @@
         <AppEnableHighDPI>true</AppEnableHighDPI>
     </PropertyGroup>
     <ItemGroup>
-        <CppCompile Include="Code\CreateUser.cpp">
-            <Form>crateUser</Form>
-            <FormType>fmx</FormType>
-            <DependentOn>Code\CreateUser.h</DependentOn>
-            <BuildOrder>5</BuildOrder>
+        <CppCompile Include="Code\ConnectService.cpp">
+            <DependentOn>Code\ConnectService.h</DependentOn>
+            <BuildOrder>6</BuildOrder>
         </CppCompile>
         <CppCompile Include="Code\Utilities.cpp">
             <DependentOn>Code\Utilities.h</DependentOn>
@@ -171,12 +169,6 @@
             <DependentOn>Code\WindowsManager.h</DependentOn>
             <BuildOrder>4</BuildOrder>
         </CppCompile>
-        <CppCompile Include="DesktopApp.cpp">
-            <Form>Window_Login</Form>
-            <FormType>fmx</FormType>
-            <DependentOn>DesktopApp.h</DependentOn>
-            <BuildOrder>1</BuildOrder>
-        </CppCompile>
         <PCHCompile Include="DesktopProject.h">
             <BuildOrder>2</BuildOrder>
             <PCH>true</PCH>
@@ -184,8 +176,20 @@
         <CppCompile Include="Project.cpp">
             <BuildOrder>0</BuildOrder>
         </CppCompile>
-        <FormResources Include="DesktopApp.fmx"/>
-        <FormResources Include="Code\CreateUser.fmx"/>
+        <CppCompile Include="Windows\CreateUser.cpp">
+            <Form>crateUser</Form>
+            <FormType>fmx</FormType>
+            <DependentOn>Windows\CreateUser.h</DependentOn>
+            <BuildOrder>5</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="Windows\DesktopApp.cpp">
+            <Form>Window_Login</Form>
+            <FormType>fmx</FormType>
+            <DependentOn>Windows\DesktopApp.h</DependentOn>
+            <BuildOrder>1</BuildOrder>
+        </CppCompile>
+        <FormResources Include="Windows\DesktopApp.fmx"/>
+        <FormResources Include="Windows\CreateUser.fmx"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

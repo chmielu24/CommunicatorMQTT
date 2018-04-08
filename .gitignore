@@ -9,3 +9,5 @@ _*
 *.stats
 *.stat
 .vs
+bin
+obj
