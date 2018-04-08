@@ -3,6 +3,7 @@
 #pragma hdrstop
 
 #include "Utilities.h"
+#include <fmx.h>
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 
@@ -15,4 +16,14 @@ bool checkPassword(std::string password)
 	}
 		return false;
 }
+
+bool chceckIsEmpty(TEdit e)
+{
+	if(e.Text.IsEmpty())
+	{
+		return true;
+	}
+    return false;
+}
+
 }

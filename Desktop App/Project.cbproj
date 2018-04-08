@@ -157,9 +157,19 @@
         <AppEnableHighDPI>true</AppEnableHighDPI>
     </PropertyGroup>
     <ItemGroup>
+        <CppCompile Include="Code\CreateUser.cpp">
+            <Form>crateUser</Form>
+            <FormType>fmx</FormType>
+            <DependentOn>Code\CreateUser.h</DependentOn>
+            <BuildOrder>5</BuildOrder>
+        </CppCompile>
         <CppCompile Include="Code\Utilities.cpp">
             <DependentOn>Code\Utilities.h</DependentOn>
             <BuildOrder>3</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="Code\WindowsManager.cpp">
+            <DependentOn>Code\WindowsManager.h</DependentOn>
+            <BuildOrder>4</BuildOrder>
         </CppCompile>
         <CppCompile Include="DesktopApp.cpp">
             <Form>Window_Login</Form>
@@ -174,13 +184,8 @@
         <CppCompile Include="Project.cpp">
             <BuildOrder>0</BuildOrder>
         </CppCompile>
-        <None Include="WidownManager.h">
-            <BuildOrder>4</BuildOrder>
-        </None>
-        <CppCompile Include="WindowManager.cpp">
-            <BuildOrder>3</BuildOrder>
-        </CppCompile>
         <FormResources Include="DesktopApp.fmx"/>
+        <FormResources Include="Code\CreateUser.fmx"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

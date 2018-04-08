@@ -1,0 +1,93 @@
+object crateUser: TcrateUser
+  Left = 0
+  Top = 0
+  Caption = 'Utworz uzytkownika'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object labelName: TLabel
+    Position.X = 32.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Imie'
+    TabOrder = 0
+  end
+  object labelSurname: TLabel
+    Position.X = 32.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Nazwisko'
+    TabOrder = 1
+  end
+  object labelPassword: TLabel
+    Position.X = 32.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Haslo'
+    TabOrder = 2
+  end
+  object labelReturnPassword: TLabel
+    Position.X = 32.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Powtorz haslo'
+    TabOrder = 3
+  end
+  object editName: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 120.000000000000000000
+    Position.Y = 24.000000000000000000
+  end
+  object editSurname: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Position.X = 120.000000000000000000
+    Position.Y = 48.000000000000000000
+  end
+  object editPassword: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 6
+    Password = True
+    Position.X = 120.000000000000000000
+    Position.Y = 72.000000000000000000
+  end
+  object editReturnPassword: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 7
+    Password = True
+    Position.X = 120.000000000000000000
+    Position.Y = 96.000000000000000000
+  end
+  object buttonCreate: TButton
+    Position.X = 120.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Text = 'Utworz uzytkownika'
+    OnClick = buttonCreateClick
+  end
+  object buttonCancel: TButton
+    Position.X = 32.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = 'Anuluj'
+    OnClick = buttonCancelClick
+  end
+end
