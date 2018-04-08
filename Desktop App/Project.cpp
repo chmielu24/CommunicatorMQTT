@@ -7,8 +7,8 @@
 #pragma hdrstop
 #include <System.StartUpCopy.hpp>
 //---------------------------------------------------------------------------
-USEFORM("Windows\DesktopApp.cpp", Window_Login);
 USEFORM("Windows\CreateUser.cpp", crateUser);
+USEFORM("Windows\DesktopApp.cpp", Window_Login);
 //---------------------------------------------------------------------------
 extern "C" int FMXmain()
 {
