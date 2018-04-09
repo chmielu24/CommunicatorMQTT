@@ -1,24 +1,38 @@
 //---------------------------------------------------------------------------
-#include "Unit1.h"
+#include "Server.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
 
-TService1 *Service1;
+THostService *HostService;
 //---------------------------------------------------------------------------
-__fastcall TService1::TService1(TComponent* Owner)
+__fastcall THostService::THostService(TComponent* Owner)
 	: TService(Owner)
 {
 }
 
 void __stdcall ServiceController(unsigned CtrlCode)
 {
-	Service1->Controller(CtrlCode);
+	HostService->Controller(CtrlCode);
 }
 
-TServiceController __fastcall TService1::GetServiceController(void)
+TServiceController __fastcall THostService::GetServiceController(void)
 {
 	return (TServiceController) ServiceController;
 }
 
 //---------------------------------------------------------------------------
+
+
+void __fastcall THostService::TCPServerExecute(TIdContext *AContext)
+{
+           //
+}
+//---------------------------------------------------------------------------
+
+
+
+
+
+
+

@@ -65,7 +65,7 @@
         <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
         <Icon_MainIcon>$(BDS)\bin\cbuilder_PROJECTICON.ico</Icon_MainIcon>
         <Icns_MainIcns>$(BDS)\bin\cbuilder_PROJECTICNS.icns</Icns_MainIcns>
-        <AllPackageLibs>vcl.lib;rtl.lib</AllPackageLibs>
+        <AllPackageLibs>vcl.lib;rtl.lib;IndySystem.lib;IndyCore.lib</AllPackageLibs>
         <IncludePath>CommunicatorMQTT\Desktop Service\;$(IncludePath)</IncludePath>
         <ILINK_LibraryPath>CommunicatorMQTT\Desktop Service\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
         <SanitizedProjectName>DesktopServiceProject</SanitizedProjectName>
@@ -114,7 +114,7 @@
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppEnableHighDPI>true</AppEnableHighDPI>
-        <LinkPackageImports>vcl.bpi;rtl.bpi</LinkPackageImports>
+        <LinkPackageImports>vcl.bpi;rtl.bpi;IndySystem.bpi;IndyCore.bpi</LinkPackageImports>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <Defines>NDEBUG;$(Defines)</Defines>
@@ -123,6 +123,7 @@
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppEnableHighDPI>true</AppEnableHighDPI>
+        <LinkPackageImports>vcl.bpi;rtl.bpi;IndySystem.bpi;IndyCore.bpi</LinkPackageImports>
     </PropertyGroup>
     <ItemGroup>
         <PCHCompile Include="DesktopService.h">
@@ -133,17 +134,16 @@
             <BuildOrder>0</BuildOrder>
         </CppCompile>
         <ResFiles Include="DesktopServiceProject.res">
-            <ModuleName>DesktopServiceProject.res</ModuleName>
             <BuildOrder>1</BuildOrder>
         </ResFiles>
-        <CppCompile Include="Unit1.cpp">
-            <Form>Service1</Form>
+        <CppCompile Include="Server.cpp">
+            <Form>HostService</Form>
             <FormType>dfm</FormType>
             <DesignClass>TService</DesignClass>
-            <DependentOn>Unit1.h</DependentOn>
+            <DependentOn>Server.h</DependentOn>
             <BuildOrder>3</BuildOrder>
         </CppCompile>
-        <FormResources Include="Unit1.dfm"/>
+        <FormResources Include="Server.dfm"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -197,8 +197,20 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName=".\Win32\Debug\DesktopServiceProject.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>DesktopServiceProject.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile Condition="'$(DynamicRTL)'=='true'" LocalName="$(BDS)\Redist\osx32\libcgstl.dylib" Class="DependencyModule">
                     <Platform Name="OSX32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName=".\Win32\Debug\DesktopServiceProject.tds" Configuration="Debug" Class="DebugSymbols">
+                    <Platform Name="Win32">
+                        <RemoteName>DesktopServiceProject.tds</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -227,12 +239,6 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName=".\Win32\Debug\DesktopServiceProject.exe" Configuration="Debug" Class="ProjectOutput">
-                    <Platform Name="Win32">
-                        <RemoteName>DesktopServiceProject.exe</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin\cc32250.dll" Class="DependencyModule">
                     <Platform Name="Win32">
                         <Overwrite>true</Overwrite>
@@ -251,12 +257,6 @@
                 </DeployFile>
                 <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin64\cc64250.dll" Class="DependencyModule">
                     <Platform Name="Win64">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName=".\Win32\Debug\DesktopServiceProject.tds" Configuration="Debug" Class="DebugSymbols">
-                    <Platform Name="Win32">
-                        <RemoteName>DesktopServiceProject.tds</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

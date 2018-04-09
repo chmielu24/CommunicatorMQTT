@@ -8,15 +8,17 @@
 #include <System.StartUpCopy.hpp>
 //---------------------------------------------------------------------------
 USEFORM("Windows\CreateUser.cpp", crateUser);
-USEFORM("Windows\DesktopApp.cpp", Window_Login);
+USEFORM("Windows\MainWindow.cpp", MainWindowForm);
+USEFORM("Windows\LoginWindow.cpp", Window_Login);
 //---------------------------------------------------------------------------
 extern "C" int FMXmain()
 {
 	try
 	{
 		Application->Initialize();
-		Application->CreateForm(__classid(TWindow_Login), &Window_Login);
+        Application->CreateForm(__classid(TMainWindowForm), &MainWindowForm);
 		Application->CreateForm(__classid(TcrateUser), &crateUser);
+		Application->CreateForm(__classid(TWindow_Login), &Window_Login);
 		Application->Run();
 	}
 	catch (Exception &exception)

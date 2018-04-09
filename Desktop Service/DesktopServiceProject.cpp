@@ -2,7 +2,7 @@
 #include <SvcMgr.hpp>
 #pragma hdrstop
 #include <tchar.h>
-USEFORM("Unit1.cpp", Service1); /* TService: File Type */
+USEFORM("Server.cpp", HostService); /* TService: File Type */
 //---------------------------------------------------------------------------
 #define Application Svcmgr::Application
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
@@ -27,7 +27,7 @@ int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 		{
 			Application->Initialize();
 		}
-		Application->CreateForm(__classid(TService1), &Service1);
+		Application->CreateForm(__classid(THostService), &HostService);
 		Application->Run();
 	}
 	catch (Exception &exception)

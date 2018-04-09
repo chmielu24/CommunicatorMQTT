@@ -1,0 +1,46 @@
+object MainWindowForm: TMainWindowForm
+  Left = 0
+  Top = 0
+  Caption = 'Main Window'
+  ClientHeight = 421
+  ClientWidth = 636
+  Visible = True
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Menu: TMainMenu
+    object Application: TMenuItem
+      Text = 'Application'
+      object Login: TMenuItem
+        Locked = True
+        Text = 'Login'
+        OnClick = LoginClick
+      end
+      object Exit: TMenuItem
+        Locked = True
+        Text = 'Exit'
+        OnClick = ExitClick
+      end
+    end
+  end
+  object Connect: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 120.000000000000000000
+    TabOrder = 2
+    Text = 'Connect'
+    OnClick = ConnectClick
+  end
+  object TCPClient: TIdTCPClient
+    OnDisconnected = TCPClientDisconnected
+    OnConnected = TCPClientConnected
+    BoundPort = 32000
+    ConnectTimeout = 0
+    Host = '127.0.0.1'
+    IPVersion = Id_IPv4
+    Port = 32000
+    ReadTimeout = -1
+    Left = 576
+    Top = 32
+  end
+end

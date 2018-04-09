@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 
-#ifndef DesktopAppH
-#define DesktopAppH
+#ifndef LoginWindowH
+#define LoginWindowH
 //---------------------------------------------------------------------------
 #include <System.Classes.hpp>
 #include <FMX.Controls.hpp>

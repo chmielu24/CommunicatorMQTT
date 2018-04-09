@@ -3,7 +3,7 @@
 #include <fmx.h>
 #pragma hdrstop
 
-#include "DesktopApp.h"
+#include "LoginWindow.h"
 #include "Code/Utilities.h"
 #include "Code/ConnectService.h"
 #include <string>
